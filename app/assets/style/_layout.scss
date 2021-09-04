@@ -1,0 +1,112 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: $text-base;
+    line-height: 1.5;
+}
+img{
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+    color: $white;
+    display: block;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.Roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+// ----------------------------------------------------
+//表頭
+.header{
+    background: $primary;
+    padding: 0 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &Nav{
+    // background-color: #fff;
+    }
+    &Logo{
+        background: url(../images/logo.png) no-repeat center;
+        background-size: contain;
+        width: 80px;
+        text-indent: 101%;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 30px 0;
+        &:hover{
+            opacity: 0.5;
+            transition: all .3s;
+        }
+    }
+    &Menu{
+        display: flex;
+        font-size: 20px;
+        a{
+            padding: 30px 32px;
+            &:hover{
+                opacity: 0.5;
+                transition: all .3s;
+            }
+        }
+    }
+}
+
+// 表尾
+.footer{
+    background: $primary;
+    color: $white;
+    &Info{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 24px;
+        margin-bottom: 32px;
+        border-bottom: 1px solid #fff;
+    }
+    &Menu{
+        display: flex;
+        a{
+            padding: 24px 15px;
+            margin: 20px 9px 20px 0px;
+        }
+    }
+    &Contact{
+        img{
+            width: 48px;
+            padding: 6px;
+        }
+        a{
+            font-size: $text-2xl;
+        }
+    }
+    .social{
+       &Menu{
+           display: flex;
+           li{
+               margin: 32px 15px;
+           }
+       } 
+    }
+}
+
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    &Privacy{
+        display: flex;
+        font-size: $text-s;
+        a{
+            padding: 0px 15px;
+            margin: 0px 0px 39px 9px;
+        }
+    }
+}  
